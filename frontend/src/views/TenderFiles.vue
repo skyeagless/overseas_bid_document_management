@@ -47,7 +47,12 @@
         <el-row :gutter="20">
           <el-col :span="12">
             <el-form-item label="项目类型">
-              <el-input v-model="form.project_type" placeholder="如：电力工程" />
+              <el-select v-model="form.project_type" placeholder="请选择项目类型" style="width: 100%">
+                <el-option label="配网" value="配网" />
+                <el-option label="光伏" value="光伏" />
+                <el-option label="数据中心" value="数据中心" />
+                <el-option label="其他" value="其他" />
+              </el-select>
             </el-form-item>
           </el-col>
           <el-col :span="12">
